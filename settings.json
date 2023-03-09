@@ -1,0 +1,37 @@
+[
+  {
+    "type": "info",
+    "content": "Required inputs:<br><b>&bull; Oncology medical image</b>: 3D image to analyze<br>&ensp;Accepted modalities: 'T1', 'T2', 'CT', 'SCALAR'<br><b>&bull; Labels mask</b>: Mask containing one or more labels.<br>&ensp;Accepted tags: 'mask','labels'"
+  },
+  {
+    "type": "container",
+    "title": "Oncology medical image",
+    "id": "input_anat",
+    "mandatory": 1,
+    "file_filter": "c_anat[1,1]((m'CT'|m'T1'|m'T2'))",
+    "in_filter": ["mri_brain_data"],
+    "out_filter": [],
+    "batch": 1,
+    "anchor": 1,
+    "section": "data"
+  },
+  {
+    "type": "line"
+  },
+  {
+    "type": "heading",
+    "content": "Converter type"
+  },
+  {
+    "type": "single_choice",
+    "id": "output_format",
+    "title": "Converter output format",
+    "mandatory": "1",
+    "options": [
+      ["mgz", "MGZ"],
+      ["nii", "NIfTI"],
+      ["niigz", "Compressed NIfTI"]
+    ],
+    "default": ["niigz"]
+  }
+]

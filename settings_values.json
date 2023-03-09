@@ -1,0 +1,10 @@
+{
+  "input_anat": [
+    {
+      "path": "T1.zip",
+      "file_filter_condition_name": "c_anat",
+      "modality": "T1"
+    }
+  ],
+  "output_format": "niigz"
+}
