@@ -41,13 +41,15 @@ docker build -t image_name:version .
 ```
 
 The next step is to test the tool locally using the docker image you just created. To perform
-this operation, use the script provided running the following:
+this operation, use the script provided running the following. Update again the image name and version:
 
 ```shell
-python test_container_sdk.py --settings settings.json --values settings_values.json test_simple_tool:latest data/input data/output/
+python test_container_sdk.py --settings settings.json --values settings_values.json image_name:version data/input data/output/
 ```
 
 The tool will run inside the container and provide the output files in the `/data/output` folder
+
+---
 
 Now that you have seen the SDK tool development pipeline, we encourage you to try implement your own.
 Follow the steps described here and check [Getting Started tutorial](https://docs.qmenta.com/sdk/getting_started.html) in the 
