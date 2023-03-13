@@ -49,6 +49,22 @@ python test_container_sdk.py --settings settings.json --values settings_values.j
 
 The tool will run inside the container and provide the output files in the `/data/output` folder
 
+If the tool finishes successfully, you can push the docker image into your repository. First, tag it using the namespace
+from the repository, for example, if the registry is in https://hub.docker.com/repositories/qmenta then:
+
+```shell
+docker tag image_name:version qmenta/image_name:version
+```
+
+Then you can push it using the set tag.
+
+```shell
+docker push qmenta/image_name:version
+```
+
+Now you can create the tool on the QMENTA platform using that tag as image name. Set on the frontend the same 
+dockerhub credentials where it is required.
+
 ---
 
 Now that you have seen the SDK tool development pipeline, we encourage you to try implement your own.
