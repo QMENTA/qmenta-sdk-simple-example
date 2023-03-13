@@ -49,7 +49,7 @@ python test_container_sdk.py --settings settings.json --values settings_values.j
 
 The tool will run inside the container and provide the output files in the `/data/output` folder
 
-If the tool finishes successfully, you can push the docker image into your repository. First, tag it using the namespace
+If the tool finishes successfully, you can push the docker image into your repository. First, tag it using the registry hostname
 from the repository, for example, if the registry is in https://hub.docker.com/repositories/qmenta then:
 
 ```shell
