@@ -62,8 +62,7 @@ Then you can push it using the set tag.
 docker push qmenta/image_name:version
 ```
 
-Now you can create the tool on the QMENTA platform using that tag as image name. Set on the frontend the same 
-dockerhub credentials where it is required.
+Now you can create the tool on the QMENTA platform using that tag as image name.
 
 ---
 
