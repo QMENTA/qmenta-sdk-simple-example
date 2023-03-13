@@ -50,7 +50,7 @@ def run(context):
     os.system(f"mrconvert {anat} {out_anat}")
 
     """ Upload results """
-    context.upload_file(out_anat, "anatomical_image.nii.gz", modality=modality)
+    context.upload_file(out_anat, "anatomical_image" + ext, modality=modality)
 
     """ Setting metadata field """
     context.set_metadata_value(key="output_format", title="Output Format", value=output_format)
