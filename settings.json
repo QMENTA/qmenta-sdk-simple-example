@@ -32,6 +32,6 @@
       ["nii", "NIfTI"],
       ["niigz", "Compressed NIfTI"]
     ],
-    "default": ["niigz"]
+    "default": "niigz"
   }
 ]
