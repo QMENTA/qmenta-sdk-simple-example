@@ -1,6 +1,6 @@
 # QMENTA SDK Tool Tutorial
 
-<img src="https://www.qmenta.com/hubfs/Logo-QMENTA-Green-280-min.png" alt="QMENTA" style="width: 50%">
+<img src="https://www.qmenta.com/hubfs/Logo-QMENTA-Green-280-min.png" alt="QMENTA">
 
 ---
 
